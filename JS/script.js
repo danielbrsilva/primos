@@ -13,7 +13,7 @@ function encodeWord() {
 
     if (!input) return;
     if (!/^[A-ZÇ]+$/.test(input)) {
-        outputDiv.innerHTML = '<p class="error">Digite apenas letras de A a Z e Ç (sem acentos ou números).</p>';
+        outputDiv.innerHTML = '<p class="error">Digite apenas letras.</p>';
         outputDiv.style.display = "block";
         return;
     }
@@ -86,7 +86,7 @@ function showAnagrams() {
     if (!input) return;
 
     if (!/^[A-ZÇ]+$/.test(input)) {
-        outputDiv.innerHTML = '<p class="error">Digite apenas letras de A a Z e Ç.</p>';
+        outputDiv.innerHTML = '<p class="error">Digite apenas letras.</p>';
         outputDiv.style.display = "block";
         return;
     }
